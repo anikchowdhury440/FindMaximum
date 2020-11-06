@@ -5,25 +5,25 @@ public class FindMaximumTest {
 	
 	@Test
 	public void testMaxInteger_PresentAtFirstPosition_ShouldReturnTrue() {
-		int number1 = 57, number2 = 23, number3 = 32;
+		int integer1 = 57, integer2 = 23, integer3 = 32;
 		FindMaximum findMaximum = new FindMaximum();
-		int max = findMaximum.getMaximum(number1, number2, number3);
-		Assert.assertEquals(number1, max);
+		int max = findMaximum.getMaximum(integer1, integer2, integer3);
+		Assert.assertEquals(integer1, max);
 	}
 
 	@Test
 	public void testMaxInteger_PresentAtSecondPosition_ShouldReturnTrue() {
-		int number1 = 57, number2 = 83, number3 = 32;
+		int integer1 = 57, integer2 = 83, integer3 = 32;
 		FindMaximum findMaximum = new FindMaximum();
-		int max = findMaximum.getMaximum(number1, number2, number3);
-		Assert.assertEquals(number2, max);
+		int max = findMaximum.getMaximum(integer1, integer2, integer3);
+		Assert.assertEquals(integer2, max);
 	}
 	
 	@Test
 	public void testMaxInteger_PresentAtThirdPosition_ShouldReturnTrue() {
-		int number1 = 57, number2 = 23, number3 = 82;
+		int integer1 = 57, integer2 = 23, integer3 = 82;
 		FindMaximum findMaximum = new FindMaximum();
-		int max = findMaximum.getMaximum(number1, number2, number3);
-		Assert.assertEquals(number3, max);
+		int max = findMaximum.getMaximum(integer1, integer2, integer3);
+		Assert.assertEquals(integer3, max);
 	}
 }
