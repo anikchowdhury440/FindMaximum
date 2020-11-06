@@ -50,4 +50,28 @@ public class FindMaximumTest {
 		Float max = findMaximum.getMaximum(float1, float2, float3);
 		Assert.assertEquals(float3, max);
 	}
+	
+	@Test
+	public void testMaxString_PresentAtFirstPosition_ShouldReturnSameString() {
+		String string1 = "Peach", string2 = "Banana", string3 = "Apple";
+		FindMaximum findMaximum = new FindMaximum();
+		String max = findMaximum.getMaximum(string1, string2, string3);
+		Assert.assertEquals(string1, max);
+	}
+	
+	@Test
+	public void testMaxString_PresentAtSecondPosition_ShouldReturnSameString() {
+		String string1 = "Banana", string2 = "Peach", string3 = "Apple";
+		FindMaximum findMaximum = new FindMaximum();
+		String max = findMaximum.getMaximum(string1, string2, string3);
+		Assert.assertEquals(string2, max);
+	}
+	
+	@Test
+	public void testMaxString_PresentAtThirdPosition_ShouldReturnSameString() {
+		String string1 = "Banana", string2 = "Apple", string3 = "Peach";
+		FindMaximum findMaximum = new FindMaximum();
+		String max = findMaximum.getMaximum(string1, string2, string3);
+		Assert.assertEquals(string3, max);
+	}
 }
