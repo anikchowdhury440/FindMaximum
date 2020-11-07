@@ -9,8 +9,7 @@ public class FindMaximum<E extends Comparable<E>> {
 	}
 	
 	public static <E extends Comparable<E>> E getMaximum(E[] values) {
-		E[] sortedValues = values;
-		Arrays.sort(sortedValues);
+		Arrays.sort(values);
 		int size = values.length;
 		E max = values[size-1];
 		return max;	
