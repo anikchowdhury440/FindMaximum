@@ -76,7 +76,7 @@ public class FindMaximumTest {
 	}
 	
 	@Test
-	public void testMaxInteger_PassingNIntegerParamter_ShouldReturnMaxValue() {
+	public void testMaxInteger_PassingNIntegerParamter_ShouldReturnMaxInteger() {
 		FindMaximum<Integer> findMaximum = new FindMaximum<Integer>(10, 30, 50, 20, 40);
 		Integer expectedMax = 50;
 		Integer max = findMaximum.getMaximum();
@@ -84,7 +84,7 @@ public class FindMaximumTest {
 	}
 	
 	@Test
-	public void testMaxFloat_PassingNFloatParamter_ShouldReturnMaxValue() {
+	public void testMaxFloat_PassingNFloatParamter_ShouldReturnMaxFloat() {
 		FindMaximum<Float> findMaximum = new FindMaximum<Float>(10.2f, 30.6f, 20.5f, 50.1f, 80.4f, 11.6f);
 		Float expectedMax = 80.4f;
 		Float max = findMaximum.getMaximum();
@@ -92,7 +92,7 @@ public class FindMaximumTest {
 	}
 	
 	@Test
-	public void testMaxString_PassingNStringParamter_ShouldReturnMaxValue() {
+	public void testMaxString_PassingNStringParamter_ShouldReturnMaxString() {
 		FindMaximum<String> findMaximum = new FindMaximum<String>("Apple","Banana", "Peach", "Orange");
 		String expectedMax = "Peach";
 		String max = findMaximum.getMaximum();
