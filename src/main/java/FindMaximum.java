@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class FindMaximum<E extends Comparable<E>> {
 	
@@ -10,13 +11,16 @@ public class FindMaximum<E extends Comparable<E>> {
 	public static <E extends Comparable<E>> E getMaximum(E[] values) {
 		
 		E max = values[0];
+	
 		for(E value : values) {
 			if(value.compareTo(max) > 0) {
 				max = value;
 			}
-		}
+		} 
+	
 		printMax(values, max);
 		return max;
+		
 	}
 	
 	public E getMaximum() {
