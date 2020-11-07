@@ -15,10 +15,19 @@ public class FindMaximum<E extends Comparable<E>> {
 				max = value;
 			}
 		}
+		printMax(values, max);
 		return max;
 	}
 	
 	public E getMaximum() {
 		return FindMaximum.getMaximum(values);
+	}
+	
+	public static <E> void printMax(E[] values, E max) {
+		System.out.print("Maximum of ");
+		for(E value: values) {
+			System.out.print(value + " ");
+		}
+		System.out.println("is " + max);
 	}
 }
